@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+<body>
+      <div class="form">
+
+    
+          MAD: <input type="text" id="MAD" value="">  <br>
+          <button  onclick="OK()" >convert</button><br>
+          EROU:<input type="text" id="EROU" value="">
+  
+        <div id="myDiv" >   </div>
+     
+      </div>
+ 
+
+
+<script>
+  
+    function OK() {
+
+         var myMAD = document.getElementById("MAD").value;
+         var amount2 = document.getElementById("EROU").value;
+
+            result1 =  myMAD * 0.0899;  
+            result2 = amount2 * 11.1254 ;
+        
+           document.getElementById("myDiv").innerHTML = result1; 
+           document.getElementById("myDiv").innerHTML = result2; 
+   }
+
+</script>
+
+</body>
+</html>
